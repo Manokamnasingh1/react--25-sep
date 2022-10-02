@@ -1,6 +1,8 @@
 import logo from './logo.svg';
 import './App.css';
 import {useEffect, useState} from 'react';
+import Nev from './component/Nev';
+import Create from './component/Create';
 function App() {
   const [value, setValue]=useState(1);
   const [count, setCount]=useState(0);
@@ -12,11 +14,10 @@ function App() {
 
   return (
     <div className="App">
-      <h1 style={{backgroundColor:"lightblue"}}>Hello</h1>
+      <Create/>
+      <Nev/>
       
-      <h1 style={{color: "red"}} >hello</h1>
-      <h4>Updated{count} times...</h4>
-      <button onClick={()=>setValue(value+1)}>Take the shot!</button>
+      
     </div>
   );
 }
